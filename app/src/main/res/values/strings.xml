@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">孟津区地理信息采集</string>
+    <string name="sp_lat">lat</string>
+    <string name="sp_lng">lng</string>
+    <string name="sp_zoom_level">zoomLevel</string>
+    <string name="sp_edit_lat">editLat</string>
+    <string name="sp_edit_lng">editLng</string>
+    <string name="sp_town">town</string>
+    <string name="sp_village">village</string>
+    <string name="sp_angle">angle</string>
+    <string name="sp_user_id">userId</string>
+    <string name="sp_user_name">userName</string>
+    <string name="sp_user_real_name">realName</string>
+    <string name="sp_user_type">userType</string>
+</resources>

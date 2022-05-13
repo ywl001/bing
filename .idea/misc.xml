@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1945" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/drawable-v24/shape_circle_red.xml" value="0.176" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/drawable/btn_bg.xml" value="0.211" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/drawable/house0.xml" value="0.166" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/drawable/house3.xml" value="0.176" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/drawable/house4.xml" value="0.176" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/drawable/house5.xml" value="0.211" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/drawable/ic_house.xml" value="0.176" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1945" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/drawable/marker.xml" value="0.176" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/drawable/shape_circle.xml" value="0.166" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/layout/activity_add_marker.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/layout/activity_edit_building.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/layout/activity_edit_house.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/layout/activity_edit_mark.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/layout/add_marker.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/layout/add_monitor.xml" value="0.25" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/layout/compass.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/layout/login.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/bing/app/src/main/res/layout/register.xml" value="0.17074275362318841" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

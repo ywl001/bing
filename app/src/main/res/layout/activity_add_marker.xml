@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_title"
+            android:layout_marginBottom="10dp"
+            android:text="添加兴趣点" />
+
+        <RadioGroup
+            android:id="@+id/radio_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/qianhui"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="50dp"
+                android:checked="true"
+                android:text="民房" />
+
+            <RadioButton
+                android:id="@+id/radio_building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="楼房" />
+
+            <RadioButton
+                android:id="@+id/radio_marker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="场所" />
+        </RadioGroup>
+<!--乡镇名称公用-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/text_normal"
+                android:text="乡镇名称：" />
+
+            <EditText
+                android:id="@+id/et_town"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </LinearLayout>
+
+<!--民房-->
+        <LinearLayout
+            android:id="@+id/container_house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="村庄名称：" />
+
+                <EditText
+                    android:id="@+id/et_village"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="户主姓名：" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="户主或户成员姓名" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="身份证号：" />
+
+                <EditText
+                    android:id="@+id/et_hoser_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:hint="和姓名对应的身份证号"
+                    android:imeOptions="actionNext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="旋转角度：" />
+
+                <EditText
+                    android:id="@+id/et_angle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:hint="房屋朝向"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+<!--楼房-->
+        <LinearLayout
+            android:id="@+id/container_building"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="小区名称：" />
+
+                <EditText
+                    android:id="@+id/et_housing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="楼栋号码：" />
+
+                <EditText
+                    android:id="@+id/et_building_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="1"
+                    android:inputType="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="楼栋层数：" />
+
+                <EditText
+                    android:id="@+id/et_count_floor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:clickable="true"
+                    android:imeOptions="actionNext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="单元数量：" />
+
+                <EditText
+                    android:id="@+id/et_count_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="几个单元"
+                    android:imeOptions="actionNext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="单元户数：" />
+
+                <EditText
+                    android:id="@+id/et_unit_houses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="每单元几户"
+                    android:imeOptions="actionNext" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="旋转角度：" />
+
+                <EditText
+                    android:id="@+id/et_building_angle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="排序方式：" />
+
+                <RadioGroup
+                    android:id="@+id/radio_sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_sort_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:checked="true"
+                        android:text="连续" />
+
+                    <RadioButton
+                        android:id="@+id/radio_sort_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:gravity="center"
+                        android:text="单元" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+<!--场所-->
+        <LinearLayout
+            android:id="@+id/container_marker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="名　　称：" />
+
+                <EditText
+                    android:id="@+id/et_marker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="负责人员：" />
+
+                <EditText
+                    android:id="@+id/et_manager_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:imeOptions="actionNext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="联系电话：" />
+
+                <EditText
+                    android:id="@+id/et_telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:imeOptions="actionNext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="显示级别：" />
+
+                <EditText
+                    android:id="@+id/et_display_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+<!--按钮-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:backgroundTint="@color/colorAccent"
+                android:text="确定" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

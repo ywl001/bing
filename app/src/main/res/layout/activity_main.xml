@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/btn_login"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_bg"
+        android:src="@drawable/login"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Button" />
+
+    <ImageView
+        android:id="@+id/btn_user_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/location"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="@id/btn_login"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        android:text="Button" />
+
+    <ImageView
+        android:id="@+id/btn_mark_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/location2"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="@id/btn_login"
+        app:layout_constraintTop_toBottomOf="@id/btn_user_location"
+        android:text="Button" />
+
+    <ImageView
+        android:id="@+id/btn_layer"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_layers"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="@id/btn_login"
+        app:layout_constraintTop_toBottomOf="@id/btn_mark_location"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/tv_login_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:background="@color/yellow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_count_house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:background="@color/yellow"
+        app:layout_constraintLeft_toRightOf="@id/tv_login_info"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_count_building"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:background="@color/yellow"
+        app:layout_constraintLeft_toRightOf="@id/tv_count_house"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_count_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:background="@color/yellow"
+        app:layout_constraintLeft_toRightOf="@id/tv_count_building"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_zoom_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/yellow"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#333333"
+        android:text="定位中，请稍后"
+        app:layout_goneMarginBottom="10dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

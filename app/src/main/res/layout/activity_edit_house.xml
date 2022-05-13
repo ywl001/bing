@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/red"
+            android:text="删除"
+            android:textSize="40dp"
+            android:layout_height="80dp">
+
+        </Button>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_title"
+            android:layout_marginBottom="10dp"
+            android:text="修改房屋数据" />
+
+        <LinearLayout
+            android:id="@+id/container_house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="姓　　名：" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:hint="户主或户成员姓名" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="身份证号：" />
+
+                <EditText
+                    android:id="@+id/et_hoser_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:hint="和人员对应的身份证号"
+                    android:imeOptions="actionNext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="旋转角度：" />
+
+                <EditText
+                    android:id="@+id/et_angle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:hint="房屋朝向"
+                    android:text="0" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:backgroundTint="@color/colorAccent"
+                android:text="确定" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

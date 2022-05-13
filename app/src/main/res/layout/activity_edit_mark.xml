@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/red"
+            android:text="删除"
+            android:textSize="40dp"
+            android:layout_height="80dp">
+
+        </Button>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_title"
+            android:layout_marginBottom="10dp"
+            android:text="修改标注数据" />
+
+        <LinearLayout
+            android:id="@+id/container_marker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="名　　称：" />
+
+                <EditText
+                    android:id="@+id/et_marker_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="负责人员：" />
+
+                <EditText
+                    android:id="@+id/et_manager_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:imeOptions="actionNext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="联系电话：" />
+
+                <EditText
+                    android:id="@+id/et_telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:imeOptions="actionNext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/text_normal"
+                    android:text="显示级别：" />
+
+                <EditText
+                    android:id="@+id/et_display_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:backgroundTint="@color/colorAccent"
+                android:text="确定" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
